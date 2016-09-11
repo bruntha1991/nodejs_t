@@ -1,0 +1,86 @@
+extends layout
+
+block content
+    //h1= title
+    h1 USER MANAGEMENT
+    h2 #[a(href="/home") HOME #[span]]
+
+    // Wrapper
+    #wrapper
+
+        // USER LIST
+        h2 User List
+        #userList
+            table
+                thead
+                    th UserName
+                    th Email
+                    th Option
+                tbody
+        // /USER LIST
+
+        // USER INFO
+        #userInfo
+            h2 User Info
+            fieldset
+                p
+                    strong Username
+                    input#userInfoName(type='text', placeholder='Username')
+                    //|  <span id='userInfoName'></span>
+                    br
+                    strong Email:
+                    input#userInfoEmail(type='text', placeholder='Username')
+                    //|  <span id='userInfoEmail'></span>
+                    br
+                    strong First Name:
+                    input#userInfoFirstName(type='text', placeholder='Username')
+                    //|  <span id='userInfoFirstName'></span>
+                    br
+                    strong Last Name:
+                    input#userInfoLastName(type='text', placeholder='Username')
+                    //input#userInfoPassword(type='hidden')
+                    //input#userInfoRole(type='hidden')
+                    input#userInfoId(type='hidden')
+                    //|  <span id='userInfoLastName'></span>
+                    //br
+                    //strong Role:
+                    //input#userInfoRole(type='text', placeholder='Username')
+                    //|  <span id='userInfoRole'></span>
+                    br
+                    br
+                    button#btnEditUser Edit User
+        // /USER INFO
+
+
+
+        // ADD USER
+        h2 Add User
+        #addUser
+            fieldset
+                input#inputUserName(type='text', placeholder='Username')
+                br
+                input#inputUserEmail(type='text', placeholder='Email')
+                br
+                input#inputFirstName(type='text', placeholder='First Name')
+                br
+                input#inputLastName(type='text', placeholder='Last Name')
+                br
+                //input#inputRole(type='text', placeholder='Role')
+                //br
+                input#inputPassword(type='text', placeholder='Password')
+                br
+                input#inputFavFood(type='text', placeholder='Favourite Food')
+                br
+                input#inputFavPlace(type='text', placeholder='Favourite Place')
+                br
+                select#inputRole(name='inputRole')
+                    option(value="") Select Role
+                    option(value="Admin") Admin
+                    option(value="Restaurant_Admin") Restaurant Admin
+                    option(value="Tourist") Tourist
+                br
+                button#btnAddUser Add User
+        // /ADD USER
+
+    // /WRAPPER
+

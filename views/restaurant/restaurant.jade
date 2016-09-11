@@ -1,0 +1,38 @@
+extends ../layout
+block content
+    //h1= title
+    h1 RESTAURANT MANAGEMENT
+    h2 #[a(href="/home") HOME #[span]]
+
+    // ADD RESTAURANT
+    h2 Add Restaurant
+    #addRestaurant
+        fieldset
+            span#result
+            input#rName(type='text', placeholder='Restaurant Name')
+            br
+            input#rAddress(type='text', placeholder='Address')
+            br
+            input#restaurantRating(type='text', placeholder='Restaurant Rating')
+            br
+            //input#locationRating(type='text', placeholder='Location Rating')
+            //br
+            //input#serviceRating(type='text', placeholder='Service Rating')
+            //br
+            input#description(type='text', placeholder='Description')
+            br
+            input#rOwnerUsername(type='text', placeholder='Username of Owner')
+            br
+            input#rLatitude(type='text', placeholder='Latitude')
+            br
+            input#rLongitude(type='text', placeholder='Longitude')
+            br
+            br
+            button#btnAddRestaurantr Add Restaurant
+
+    br
+    br
+    br
+    h2 #[a(href="/restaurant/main") ADD MAIN FOOD CATEGORY #[span]]
+    h2 #[a(href="/restaurant/sub") ADD SUB FOOD CATEGORY #[span]]
+    h2 #[a(href="/restaurant/list") ADD FOOD LIST #[span]]

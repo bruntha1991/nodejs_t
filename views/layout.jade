@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script#imageTemplate(type="text/x-jquery-tmpl")
+            li(class="page-${page}")
+                a.image-select(href="#", url="${url}", thumb="${thumburl}"): image(src="${thumburl}")
+
+    body
+        block content
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src='/javascripts/global.js')

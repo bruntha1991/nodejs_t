@@ -1,0 +1,67 @@
+extends layout
+
+block content
+    //h1= title
+    h1 RESTAURANT MANAGEMENT
+
+    #mc
+        #mainCategory.form-group-default
+            button#btnR(onclick='removeOuterDiv()') Remove
+            br
+            h4 Food Main Category
+                input#mCategoryFoodName(type='text', placeholder='Food Name')
+                br
+                l Food Image
+                input#rFile(type='file')
+                br
+                #subCategoryDiv
+                button#btnAddSubCategory Add Food Sub Category
+                br
+
+
+
+    #sc
+        #subCategory.form-group-default
+            button#btnAR Remove
+            br
+            h4 Food Sub Category
+                input#mCategoryFoodName(type='text', placeholder='Food Name')
+                br
+                l Food Image
+                input#rFile(type='file')
+                br
+
+
+    // ADD RESTAURANT
+    h2 Add Restaurant
+    #addRestaurant
+        fieldset
+            input#rName(type='text', placeholder='Restaurant Name')
+            br
+            input#rAddress(type='text', placeholder='Address')
+            br
+            input#rOwnerUsername(type='text', placeholder='Username of Owner')
+            br
+            input#rLatitude(type='text', placeholder='Latitude')
+            br
+            input#rLongitude(type='text', placeholder='Longitude')
+            br
+            #mainCategoryDiv
+            button#btnAddMainCategory Add Food Main Category
+            br
+            br
+            button#btnAddRestaurantr Add Restaurant
+    // /ADD RESTAURANT
+
+
+
+
+
+    //h2 Image select
+    //#addImage
+    //    fieldset
+    //        input#rFile(type='file')
+    //        br
+    //        button#btnSaveImg Save Image
+
+

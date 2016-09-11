@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+    h1 RESTAURANT MANAGEMENT
+    h2 #[a(href="/restaurant/home") RESTAURANT HOME #[span]]
+    h2 #[a(href="/restaurant/sub") ADD SUB FOOD CATEGORY #[span]]
+    h2 #[a(href="/restaurant/list") ADD FOOD LIST #[span]]
+    // Wrapper
+    h2 Add Main Food Category
+    #addMainFood
+        fieldset
+            //span#result Main Category Food Added Successfully
+            br
+            select#inputRestaurant(name='inputRestaurant')
+            br
+            input#mCategoryFoodName(type='text', placeholder='Food Name')
+            br
+            l Food Image
+            input#files(type='file' multiple)
+            l (size should be less than 50kb)
+            br
+            br
+            button#btnAddMainFood Add Food
+    // /ADD USER
+    #editRestaurant
+        fieldset
+            output#result
+            <img src="" height="200">
+            //img(src= "images/img.jpg")
+
+    // /WRAPPER

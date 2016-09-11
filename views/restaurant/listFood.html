@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Restaurant Management </title>
+    <header>
+        <h1>Restaurant Details</h1>
+    </header>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+    <div id="addFoodList">
+        <fieldset>
+            <h2>Add FoodList</h2>
+            <h4 id="notification" style="color: green"></h4>
+            <select id="inputRestaurants" name="inputRestaurants"
+                                                   onchange="getMainFoodForList()"></select><br><select id="inputMainFood"
+                                                                                                        name="inputMainFood"
+                                                                                                        onchange="getSubFoodForList()"></select><br><select
+                id="inputSubFood" name="inputMainFood"></select><br><input id="mCategoryFoodName" type="text"
+                                                                           placeholder="Food Name"><br>
+            <l>Food Image</l>
+            <input id="files" type="file">
+            <l>(size should be less than 50kb)</l>
+            <br><br>
+            <button id="btnAddFoodList">Add Food</button>
+        </fieldset>
+    </div>
+    <div id="editRestaurant">
+        <fieldset>
+            <output id="result"></output>
+            <img src="" height="200"></fieldset>
+    </div>
+
+</head>
+
+<body>
+<div>
+    <nav>
+        <p>
+            <a href="/restaurant/home">RESTAURANT HOME</a>
+        </p>
+    </nav>
+
+    <footer>
+        <p>
+            &copy; Copyright  by Sri Lanka Institute of Information Technology
+        </p>
+    </footer>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/javascripts/restaurant.js"></script>
+</body>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head><title>Ceylon Cuisine : Restaurant</title>-->
+    <!--<link rel="stylesheet" href="/stylesheets/style.css">-->
+    <!--<script id="imageTemplate" type="text/x-jquery-tmpl">-->
+        <!--<li-->
+         <!--class="page-${page}"><a href="#" url="${url}" thumb="${thumburl}" class="image-select"><image src="${thumburl}"></image></a></li>-->
+    <!--</script>-->
+<!--</head>-->
+<!--<body><h1>RESTAURANT MANAGEMENT</h1>-->
+
+<!--<h2><a href="/restaurant/home">RESTAURANT HOME <span></span></a></h2>&lt;!&ndash; Wrapper&ndash;&gt;<h2>Add FoodList</h2>-->
+
+
+<!--&lt;!&ndash; /WRAPPER&ndash;&gt;-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
+<!--<script src="/javascripts/global.js"></script>-->
+<!--</body>-->
+</html>

@@ -1,0 +1,22 @@
+                #mainCategory
+                    h4 Food Main Category
+                        input#mCategoryFoodName(type='text', placeholder='Food Name')
+                        br
+                        l Food Image
+                        input#rFile(type='file')
+                        br
+                        #subCategory
+                            h4 Food Sub Category
+                                input#mCategoryFoodName(type='text', placeholder='Food Name')
+                                br
+                                l Food Image
+                                input#rFile(type='file')
+                                br
+                        button#btnAddSubCategory Add Food Sub Category
+                        button#btnCancelMainCategory Remove Main Food Category
+                        br
+                        br
+
+                button#btnAddMainCategory Add Food Main Category
+                br
+                br

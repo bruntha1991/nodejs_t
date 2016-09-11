@@ -1,0 +1,6 @@
+atob()
+
+        //img(src= "images/img.jpg")
+
+
+            'file': btoa($('#addRestaurant fieldset input#rFile').val())

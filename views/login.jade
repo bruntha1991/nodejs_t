@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    //h1 Welcome to Ceylon Cuisine
+    //.container
+    //    form.form-signin(action="/login", method="post")
+    //        h2.form-signin-heading Please sign in
+    //        input.input-block-level(id='loginEmail' type="text", name="username", placeholder="Email address")
+    //        input.input-block-level(id='loginPassword' type="password", name="password", placeholder="Password")
+    //        //label.checkbox.
+    //        //    <input type="checkbox" value="remember-me" /> Remember me
+    //        button.btn.btn-large.btn-primary(type="submit") Sign in
+    //        br
+
+    h1 Welcome to Ceylon Cuisine
+
+    // Wrapper
+    #wrapper
+
+        // LOGIN
+        h2 System Login
+        #login
+            fieldset
+                input#loginUserEmail(type='text', placeholder='Email')
+                br
+                input#loginFirstName(type='password', placeholder='Password')
+                br
+                button#btnLogin Login
+        // LOGIN
+
+    // /WRAPPER
